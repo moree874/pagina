@@ -28,12 +28,13 @@ nav h2 {
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 15px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .contenido-banner {
-    min-height: 110vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -43,11 +44,10 @@ nav a {
 .boton {
     background-color: #f0a500;
     color: black;
-    padding: 20px 40px;
-    font-size: 24px;
-    font-weight: bold;
+    padding: 16px 30px;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 section {
@@ -323,4 +323,25 @@ nav button:hover {
     padding: 12px;
     border-radius: 8px;
     border: none;
+}
+@media (max-width: 768px) {
+
+    .banner {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+}
+@media (max-width: 768px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
 }
