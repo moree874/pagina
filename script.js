@@ -1,17 +1,50 @@
+let carrito = [];
 let total = 0;
 
 function agregarAlCarrito(nombre, precio) {
+    carrito.push({
+        nombre: nombre,
+        precio: precio
+    });
+
+    mostrarCarrito();
+}
+
+function mostrarCarrito() {
     const lista = document.getElementById("lista-carrito");
     const totalTexto = document.getElementById("total");
 
-    const item = document.createElement("li");
-    item.textContent = nombre + " - $" + precio;
+    lista.innerHTML = "";
+    total = 0;
 
-    lista.appendChild(item);
+    carrito.forEach(function(producto, index) {
+        const item = document.createElement("li");
 
-    total = total + precio;
+        item.innerHTML = `
+            ${producto.nombre} - $${producto.precio}
+            <button class="btn-eliminar" onclick="eliminarProducto(${index})">
+                🗑️
+            </button>
+        `;
+
+        lista.appendChild(item);
+
+        total = total + producto.precio;
+    });
+
     totalTexto.textContent = total;
 }
+
+function eliminarProducto(index) {
+    carrito.splice(index, 1);
+    mostrarCarrito();
+}
+
+function vaciarCarrito() {
+    carrito = [];
+    mostrarCarrito();
+}
+
 function mostrarCategoria(categoria) {
     const secciones = document.querySelectorAll(".categoria");
 
@@ -22,6 +55,7 @@ function mostrarCategoria(categoria) {
     const seccionElegida = document.getElementById(categoria);
     seccionElegida.style.display = "block";
 }
+
 function finalizarCompra() {
     if (total === 0) {
         alert("El carrito está vacío");
@@ -58,37 +92,12 @@ function confirmarDelivery() {
         alert("Por favor escribí tu dirección o ubicación");
     } else {
         const totalFinal = total + 1000;
-
         alert("Vas a pagar $" + totalFinal + ". Escribí ese monto en Mercado Pago.");
-
         window.location.href = "https://link.mercadopago.com.ar/morena34859";
     }
 }
 
 function confirmarRetiro() {
     alert("Vas a pagar $" + total + ". Escribí ese monto en Mercado Pago.");
-
     window.location.href = "https://link.mercadopago.com.ar/morena34859";
-}
-function mostrarCarrito() {
-    listaCarrito.innerHTML = "";
-
-    carrito.forEach((producto, index) => {
-        const li = document.createElement("li");
-
-        li.innerHTML = `
-            ${producto.nombre} - $${producto.precio}
-            <button class="btn-eliminar" onclick="eliminarProducto(${index})">
-                🗑️
-            </button>
-        `;
-
-        listaCarrito.appendChild(li);
-    });
-
-    total.innerText = calcularTotal();
-}
-function eliminarProducto(index) {
-    carrito.splice(index, 1);
-    mostrarCarrito();
 }
