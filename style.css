@@ -411,3 +411,13 @@ nav button:hover {
 
     padding: 80px 20px;
 }
+.btn-eliminar {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+}

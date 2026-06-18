@@ -70,3 +70,25 @@ function confirmarRetiro() {
 
     window.location.href = "https://link.mercadopago.com.ar/morena34859";
 }
+function mostrarCarrito() {
+    listaCarrito.innerHTML = "";
+
+    carrito.forEach((producto, index) => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            ${producto.nombre} - $${producto.precio}
+            <button class="btn-eliminar" onclick="eliminarProducto(${index})">
+                🗑️
+            </button>
+        `;
+
+        listaCarrito.appendChild(li);
+    });
+
+    total.innerText = calcularTotal();
+}
+function eliminarProducto(index) {
+    carrito.splice(index, 1);
+    mostrarCarrito();
+}
