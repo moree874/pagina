@@ -395,70 +395,46 @@ nav button:hover {
 }
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+    body {
+        font-size: 22px !important;
     }
 
     nav h2 {
-        font-size: 30px;
-    }
-
-    nav div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        font-size: 36px !important;
     }
 
     nav a,
     nav button {
-        font-size: 16px;
-        margin-left: 0;
-    }
-
-    .titulo-productos {
-        padding: 80px 20px;
+        font-size: 22px !important;
     }
 
     .titulo-productos h1 {
-        font-size: 42px;
+        font-size: 52px !important;
     }
 
     .titulo-productos p {
-        font-size: 18px;
+        font-size: 24px !important;
     }
 
     .filtros button {
-        font-size: 15px;
-        padding: 10px 14px;
-        margin: 5px;
+        font-size: 20px !important;
+        padding: 14px 22px !important;
     }
 
     .categoria h2 {
-        font-size: 38px;
-    }
-
-    .producto {
-        width: 80%;
-        max-width: 340px;
+        font-size: 48px !important;
     }
 
     .producto h3 {
-        font-size: 24px;
+        font-size: 30px !important;
     }
 
     .producto p {
-        font-size: 18px;
+        font-size: 24px !important;
     }
 
     .producto button {
-        font-size: 16px;
-        padding: 12px 25px;
-    }
-
-    .producto img {
-        height: 200px;
+        font-size: 22px !important;
+        padding: 16px 30px !important;
     }
 }
