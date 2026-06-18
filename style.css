@@ -331,42 +331,6 @@ nav button:hover {
     border-radius: 8px;
     border: none;
 }
-@media (max-width: 768px) {
-
-    .titulo-productos h1 {
-        font-size: 55px;
-    }
-
-    .titulo-productos p {
-        font-size: 24px;
-    }
-
-    nav h2 {
-        font-size: 32px;
-    }
-
-    nav a,
-    nav button {
-        font-size: 18px;
-    }
-
-    .categoria h2 {
-        font-size: 45px;
-    }
-
-    .producto h3 {
-        font-size: 26px;
-    }
-
-    .producto p {
-        font-size: 22px;
-    }
-
-    .producto button {
-        font-size: 18px;
-        padding: 12px 25px;
-    }
-}
 
 
 #comidas {
@@ -433,6 +397,12 @@ nav button:hover {
 
     nav {
         flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav h2 {
+        font-size: 30px;
     }
 
     nav div {
@@ -442,15 +412,53 @@ nav button:hover {
         gap: 10px;
     }
 
-}
-@media (max-width: 768px) {
+    nav a,
+    nav button {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .titulo-productos {
+        padding: 80px 20px;
+    }
+
+    .titulo-productos h1 {
+        font-size: 42px;
+    }
+
+    .titulo-productos p {
+        font-size: 18px;
+    }
+
+    .filtros button {
+        font-size: 15px;
+        padding: 10px 14px;
+        margin: 5px;
+    }
+
+    .categoria h2 {
+        font-size: 38px;
+    }
 
     .producto {
-        width: 320px;
+        width: 80%;
+        max-width: 340px;
+    }
+
+    .producto h3 {
+        font-size: 24px;
+    }
+
+    .producto p {
+        font-size: 18px;
+    }
+
+    .producto button {
+        font-size: 16px;
+        padding: 12px 25px;
     }
 
     .producto img {
-        height: 220px;
+        height: 200px;
     }
-
 }
