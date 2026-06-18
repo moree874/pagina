@@ -33,7 +33,7 @@ nav a {
 }
 
 .contenido-banner {
-    min-height: 50vh;
+    min-height: 45vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
