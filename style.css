@@ -5,12 +5,11 @@ body {
     color: white;
 }
 
-.banner {
-    min-height: 70vh;
+.banner{
     background-image: url("fondo.jpg");
-    background-size: contain;
+    background-size: 95%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 
 nav {
@@ -34,7 +33,7 @@ nav a {
 }
 
 .contenido-banner {
-    min-height: 75vh;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -44,7 +43,7 @@ nav a {
 .boton {
     background-color: #f0a500;
     color: black;
-    padding: 16px 30px;
+    padding: 30px 100px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -128,8 +127,16 @@ section h2 {
     color: #f0a500;
 }
 
+.mapa {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
 .mapa iframe {
-    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
 }
 
 #contacto {
@@ -370,4 +377,37 @@ nav button:hover {
         border-radius: 12px;
     }
 
+}
+#comidas {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-comidas.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 80px 20px;
+}
+#despensa {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-despensa.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 80px 20px;
+}
+#bebidas {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-bebidas.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 80px 20px;
 }
