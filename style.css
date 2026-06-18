@@ -29,7 +29,7 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .contenido-banner {
@@ -179,12 +179,7 @@ footer {
     display: inline-block;
 }
 nav button {
-    background: none;
-    border: none;
-    color: white;
-    font-weight: bold;
-    margin-left: 25px;
-    cursor: pointer;
+    font-size: 28px;
 }
 
 nav button:hover {
@@ -437,4 +432,24 @@ nav button:hover {
         font-size: 22px !important;
         padding: 16px 30px !important;
     }
+}
+.filtros button {
+    font-size: 24px;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
 }
