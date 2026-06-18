@@ -333,51 +333,42 @@ nav button:hover {
 }
 @media (max-width: 768px) {
 
-    nav {
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 12px;
+    .titulo-productos h1 {
+        font-size: 55px;
+    }
+
+    .titulo-productos p {
+        font-size: 24px;
     }
 
     nav h2 {
-        font-size: 24px;
-        margin: 0;
+        font-size: 32px;
     }
 
-    nav div {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
+    nav a,
+    nav button {
         font-size: 18px;
-        margin-left: 0;
     }
 
-    .banner {
-        min-height: 100vh;
-        background-size: 90%;
-        background-position: center 120px;
-        background-repeat: no-repeat;
+    .categoria h2 {
+        font-size: 45px;
     }
 
-    .contenido-banner {
-        min-height: 85vh;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 70px;
+    .producto h3 {
+        font-size: 26px;
     }
 
-    .boton {
+    .producto p {
         font-size: 22px;
-        padding: 18px 35px;
-        border-radius: 12px;
     }
 
+    .producto button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
 }
+
+
 #comidas {
     background-image:
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
@@ -437,4 +428,29 @@ nav button:hover {
         #810202fd,
         #be4107
     );
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .producto {
+        width: 320px;
+    }
+
+    .producto img {
+        height: 220px;
+    }
+
 }
