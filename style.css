@@ -179,7 +179,9 @@ footer {
     display: inline-block;
 }
 nav button {
-    font-size: 28px;
+    
+    font-size: 16px !important;
+
 }
 
 nav button:hover {
@@ -440,16 +442,23 @@ nav button:hover {
 }
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        gap: 20px;
+    nav a,
+    nav button {
+        font-size: 15px !important;
+    }
+
+    nav button {
+        padding: 8px 10px;
     }
 
     nav div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
+        gap: 6px;
     }
 
+
+
+}
+nav div {
+    display: flex;
+    gap: 8px;
 }
