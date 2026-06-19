@@ -6,7 +6,6 @@ body {
 }
 
 .banner {
-    position: relative;
     background-image: url("fondo.jpg");
     background-size: 95%;
     background-repeat: no-repeat;
@@ -29,13 +28,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 28px;
-}
-
-.menu {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
+    margin-left: 15px;
 }
 
 .contenido-banner {
@@ -155,23 +148,37 @@ footer {
     padding: 20px;
 }
 
+/* PRODUCTOS */
+
 .header-productos {
     position: relative;
-    background: linear-gradient(
-        to bottom,
-        #810202fd,
-        #be4107
-    );
+    background: linear-gradient(to bottom, #810202fd, #be4107);
 }
 
-.titulo-productos {
+.header-productos .titulo-productos {
     text-align: center;
-    padding: 130px 20px 70px;
+    padding: 70px 20px;
 }
 
-.titulo-productos h1 {
-    font-size: 55px;
+.header-productos .titulo-productos h1 {
+    font-size: 45px;
     color: #f1ecdb;
+    margin: 0 0 20px 0;
+}
+
+.header-productos .titulo-productos p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.header-productos .inicio-banner {
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .filtros {
@@ -179,30 +186,41 @@ footer {
     padding: 30px;
 }
 
-.filtros a {
-    background-color: #f0a500;
-    color: black;
-    text-decoration: none;
-    padding: 14px 25px;
-    border-radius: 8px;
-    margin: 10px;
-    font-weight: bold;
-    display: inline-block;
-}
-
 .filtros button {
-    font-size: 24px;
-    padding: 15px 25px;
+    font-size: 20px;
+    padding: 12px 22px;
     font-weight: bold;
+    margin: 8px;
 }
 
-nav button {
-    font-size: 16px !important;
+#comidas,
+#despensa,
+#bebidas {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
 }
 
-nav button:hover {
-    color: #f0a500;
+#comidas {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-comidas.jpg");
 }
+
+#despensa {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-despensa.jpg");
+}
+
+#bebidas {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("fondo-bebidas.jpg");
+}
+
+/* MODAL */
 
 .modal {
     display: none;
@@ -245,7 +263,7 @@ nav button:hover {
 }
 
 .delivery-texto h2 {
-    font-size: 48px;
+    font-size: 42px;
     color: #f0a500;
 }
 
@@ -281,11 +299,6 @@ nav button:hover {
     cursor: pointer;
 }
 
-.auto-delivery {
-    font-size: 60px;
-    margin: 20px;
-}
-
 .datos-delivery {
     display: none;
     position: absolute;
@@ -304,36 +317,6 @@ nav button:hover {
     border: none;
 }
 
-#comidas {
-    background-image:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("fondo-comidas.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 20px;
-}
-
-#despensa {
-    background-image:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("fondo-despensa.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 20px;
-}
-
-#bebidas {
-    background-image:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("fondo-bebidas.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 20px;
-}
-
 .btn-eliminar {
     background-color: #ff3b3b;
     color: white;
@@ -345,53 +328,113 @@ nav button:hover {
     cursor: pointer;
 }
 
+/* CELULAR */
+
 @media (max-width: 768px) {
-   
+
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 18px 20px;
+    }
 
     nav h2 {
-        font-size: 20px !important;
+        font-size: 18px;
     }
 
-    nav a,
-    nav button {
-        font-size: 22px !important;
-    }
-}
-
-    .header-productos .inicio-banner {
-        font-size: 18px !important;
-        right: 25px;
-        top: 25px;
+    nav a {
+        font-size: 16px;
+        margin-left: 8px;
     }
 
-    .header-productos .titulo-productos h1 {
-        font-size: 38px !important;
+    .banner {
+        background-size: cover;
     }
 
-    .header-productos .titulo-productos p {
-        font-size: 16px !important;
+    .contenido-banner {
+        min-height: 24vh;
+        padding-bottom: 40px;
+    }
+
+    .boton {
+        font-size: 22px;
+        padding: 22px 60px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    section h2 {
+        font-size: 32px;
     }
 
     .header-productos nav h2 {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
+    .header-productos .inicio-banner {
+        font-size: 16px;
+        top: 18px;
+        right: 25px;
+    }
 
-.header-productos {
-    position: relative;
-}
+    .header-productos .titulo-productos {
+        padding: 65px 20px 45px;
+    }
 
-.header-productos .titulo-productos{
-    text-align: center;
-    padding: 40px 20px;
-}
+    .header-productos .titulo-productos h1 {
+        font-size: 32px;
+    }
 
-.header-productos .inicio-banner {
-    position: absolute;
-    top: 35px;
-    right: 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: bold;
+    .header-productos .titulo-productos p {
+        font-size: 15px;
+    }
+
+    .filtros {
+        padding: 18px;
+    }
+
+    .filtros button {
+        display: block;
+        width: 210px;
+        margin: 8px auto;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .producto {
+        width: 230px;
+        padding: 18px;
+    }
+
+    .producto h3 {
+        font-size: 20px;
+    }
+
+    .producto p {
+        font-size: 16px;
+    }
+
+    .producto button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .modal-delivery {
+        width: 85%;
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .delivery-texto,
+    .delivery-imagen {
+        width: 100%;
+    }
+
+    .delivery-texto h2 {
+        font-size: 30px;
+    }
 }
