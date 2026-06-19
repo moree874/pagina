@@ -394,31 +394,21 @@ nav button:hover {
         padding: 16px 30px !important;
     }
 }
-.header-productos nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-productos .menu {
-    margin-left: auto;
-}
-.header-productos{
+.header-productos {
     position: relative;
 }
 
-.inicio-banner{
+.header-productos .titulo-productos {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.header-productos .inicio-banner {
     position: absolute;
     top: 35px;
     right: 50px;
-
     color: white;
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
-}
-
-.titulo-productos{
-    text-align: center;
-    padding: 70px 20px;
 }

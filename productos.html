@@ -2,9 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - La Guarida</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+<header class="header-productos">
+
+    <nav>
+        <h2>LA GUARIDA</h2>
+    </nav>
+
+    <a href="index.html" class="inicio-banner">Inicio</a>
+
+    <div class="titulo-productos">
+        <h1>Hacé tu pedido</h1>
+        <p>Elegí comidas, productos de despensa y bebidas</p>
+    </div>
+
+</header>
 
 <div id="modal-compra" class="modal">
     <div class="modal-delivery">
@@ -28,60 +46,28 @@
 
         <div id="datos-delivery" class="datos-delivery">
             <h3>Datos para delivery</h3>
-            <input type="text" id="ubicacion" placeholder="Escribí tu Dirección o ubicación">
-            <input type="text" id="ubicacion" placeholder="Escribí tu Numero de telefono">
-            <input type="text" id="ubicacion" placeholder="Escribí tu Nombre">
+            <input type="text" placeholder="Escribí tu dirección o ubicación">
+            <input type="text" placeholder="Escribí tu número de teléfono">
+            <input type="text" placeholder="Escribí tu nombre">
+
             <h3>Total con delivery: $<span id="total-delivery">0</span></h3>
+
             <button onclick="confirmarDelivery()">Confirmar delivery</button>
         </div>
 
         <div id="datos-retiro" class="datos-delivery">
             <h3>Retiro en local</h3>
-            <input type="text" id="ubicacion" placeholder="Escribí tu Nombre">
+            <input type="text" placeholder="Escribí tu nombre">
+
             <p>Pagás solo el total de la compra.</p>
+
             <h3>Total a pagar: $<span id="total-retiro">0</span></h3>
+
             <button onclick="confirmarRetiro()">Confirmar retiro</button>
         </div>
 
     </div>
 </div>
-        <div id="datos-delivery" class="datos-delivery">
-            <h3>Datos para delivery</h3>
-
-            <input type="text" id="ubicacion" placeholder="Escribí tu dirección o ubicación">
-
-            <h3>Total con delivery: $<span id="total-delivery">0</span></h3>
-
-            <button onclick="confirmarDelivery()">Confirmar pedido con delivery</button>
-        </div>
-
-        <div id="datos-retiro" class="datos-delivery">
-            <h3>Retiro en local</h3>
-
-            <p>Pagás solo el total de la compra y retirás en el local.</p>
-
-            <h3>Total a pagar: $<span id="total-retiro">0</span></h3>
-
-            <button onclick="confirmarRetiro()">Confirmar retiro en local</button>
-        </div>
-    </div>
-</div>
-<body>
-<header class="header-productos">
-
-    <nav>
-        <h2>LA GUARIDA</h2>
-    </nav>
-
-    <a href="index.html" class="inicio-banner">Inicio</a>
-
-    <div class="titulo-productos">
-        <h1>Hacé tu pedido</h1>
-        <p>Elegí comidas, productos de despensa y bebidas</p>
-    </div>
-
-</header>
-
 <section class="filtros">
     <button onclick="mostrarCategoria('comidas')">Ver comidas</button>
 <button onclick="mostrarCategoria('despensa')">Ver despensa</button>
