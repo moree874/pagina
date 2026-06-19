@@ -347,53 +347,25 @@ nav button:hover {
 
 @media (max-width: 768px) {
 
-    body {
-        font-size: 22px !important;
+    .header-productos .inicio-banner {
+        font-size: 18px !important;
+        right: 25px;
+        top: 25px;
     }
 
-    nav {
-        padding: 25px 35px;
+    .header-productos .titulo-productos h1 {
+        font-size: 38px !important;
     }
 
-    nav h2 {
-        font-size: 20px !important;
+    .header-productos .titulo-productos p {
+        font-size: 16px !important;
     }
 
-    nav a,
-    nav button {
-        font-size: 22px !important;
-    }
-
-    .titulo-productos h1 {
-        font-size: 52px !important;
-    }
-
-    .titulo-productos p {
-        font-size: 24px !important;
-    }
-
-    .filtros button {
-        font-size: 20px !important;
-        padding: 14px 22px !important;
-    }
-
-    .categoria h2 {
-        font-size: 48px !important;
-    }
-
-    .producto h3 {
-        font-size: 30px !important;
-    }
-
-    .producto p {
-        font-size: 24px !important;
-    }
-
-    .producto button {
-        font-size: 22px !important;
-        padding: 16px 30px !important;
+    .header-productos nav h2 {
+        font-size: 18px !important;
     }
 }
+
 .header-productos {
     position: relative;
 }
