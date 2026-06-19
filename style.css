@@ -346,6 +346,17 @@ nav button:hover {
 }
 
 @media (max-width: 768px) {
+   
+
+    nav h2 {
+        font-size: 20px !important;
+    }
+
+    nav a,
+    nav button {
+        font-size: 22px !important;
+    }
+}
 
     .header-productos .inicio-banner {
         font-size: 18px !important;
@@ -364,15 +375,15 @@ nav button:hover {
     .header-productos nav h2 {
         font-size: 18px !important;
     }
-}
+
 
 .header-productos {
     position: relative;
 }
 
-.header-productos .titulo-productos {
+.header-productos .titulo-productos{
     text-align: center;
-    padding: 70px 20px;
+    padding: 40px 20px;
 }
 
 .header-productos .inicio-banner {
