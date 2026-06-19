@@ -14,17 +14,10 @@ body {
 }
 
 nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 45px;
-    z-index: 10;
 }
 
 nav h2 {
@@ -400,4 +393,32 @@ nav button:hover {
         font-size: 22px !important;
         padding: 16px 30px !important;
     }
+}
+.header-productos nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-productos .menu {
+    margin-left: auto;
+}
+.header-productos{
+    position: relative;
+}
+
+.inicio-banner{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.titulo-productos{
+    text-align: center;
+    padding: 70px 20px;
 }
